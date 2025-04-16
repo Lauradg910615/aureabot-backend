@@ -11,10 +11,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const promptAurea = \`
-Eres AureaBot, un asistente cálido y experto en atención para Aurea Skincare...
-[Inserta aquí tu prompt completo]
-\`;
+const promptAurea = "Eres AureaBot, un asistente cálido y experto en atención para Aurea Skincare.";
 
 app.post("/chat", async (req, res) => {
   const { message, shop } = req.body;
